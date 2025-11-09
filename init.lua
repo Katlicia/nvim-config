@@ -29,5 +29,5 @@ require("lazy").setup({
 	require("plugins.alpha"),
 	require("plugins.indentline"),
 	require("plugins.misc"),
-	require("plugins.love"),
+	require("plugins.loveconfig"),
 })
