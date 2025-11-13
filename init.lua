@@ -10,6 +10,16 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	end
 end
 
+vim.api.nvim_create_autocmd("BufEnter", {
+	callback = function()
+		local bufname = vim.api.nvim_buf_get_name(0)
+		if bufname ~= "" then
+			local dir = vim.fn.fnamemodify(bufname, ":p:h")
+			vim.cmd("cd " .. dir)
+		end
+	end,
+})
+
 ---@type vim.Option
 local rtp = vim.opt.rtp
 rtp:prepend(lazypath)
