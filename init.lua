@@ -49,4 +49,5 @@ require("lazy").setup({
 	require("plugins.indentline"),
 	require("plugins.misc"),
 	require("plugins.loveconfig"),
+	require("plugins.lorem"),
 })
