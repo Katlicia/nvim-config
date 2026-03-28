@@ -50,4 +50,5 @@ require("lazy").setup({
 	require("plugins.misc"),
 	require("plugins.loveconfig"),
 	require("plugins.lorem"),
+	require("plugins.autotag"),
 })
