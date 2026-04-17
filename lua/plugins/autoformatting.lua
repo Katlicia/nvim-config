@@ -13,6 +13,7 @@ return {
 		require("mason-null-ls").setup({
 			ensure_installed = {
 				"prettier", -- ts/js formatter
+				"goimports", -- go formatter
 				"eslint_d", -- ts/js linter
 				"shfmt", -- Shell formatter
 				"stylua", -- lua formatter; Already installed via Mason
@@ -25,6 +26,7 @@ return {
 			diagnostics.checkmake,
 			formatting.prettier.with({ filetypes = { "html", "json", "yaml", "markdown" } }),
 			formatting.stylua,
+			formatting.goimports,
 			formatting.shfmt.with({ args = { "-i", "4" } }),
 			formatting.terraform_fmt,
 			require("none-ls.formatting.ruff").with({ extra_args = { "--extend-select", "I" } }),
