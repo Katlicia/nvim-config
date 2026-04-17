@@ -51,4 +51,8 @@ require("lazy").setup({
 	require("plugins.loveconfig"),
 	require("plugins.lorem"),
 	require("plugins.autotag"),
+	require("plugins.toggleterm"),
+	require("plugins.lazygit"),
+	require("plugins.smear-cursor"),
+	require("plugins.beacon"),
 })
